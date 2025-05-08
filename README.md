@@ -27,7 +27,7 @@ Node(value)
 
 **Attributes**
 - `value` (Any): The value stored in the node.
-- `next` (Node or None)`: Pointer to the next node in the structure.
+- `next` (`Node` or `None`): Pointer to the next node in the structure.
 
 ### `Stack` Class
 Implements a LIFO stack using linked nodes.
@@ -39,7 +39,7 @@ Stack()
 ```
 
 **Attributes**
-- `top` (Node or None): Points to the top of the stack.
+- `top` (`Node` or `None`): Points to the top of the stack.
 
 **Methods**
 - `push(value)`: Adds a value to the top of the stack.
@@ -57,8 +57,8 @@ Queue()
 ```
 
 **Attributes**
-- `front` (Node or None): First item in the queue.
-- `rear` (Node or None): Last item in the queue.
+- `front` (`Node` or `None`): First item in the queue.
+- `rear` (`Node` or `None`): Last item in the queue.
 
 **Methods**
 - `enqueue(value)`: Adds a value to the end of the queue.
