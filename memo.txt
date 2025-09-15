@@ -1,0 +1,19 @@
+Why is a stack the right choice for undo/redo?
+
+In my opinion, a stack is the best implementation for a do/undo system or method because it follows the Last-In-First-Out principle, which completely
+matches de purpose of the program itself. When the user performs an action (X), it is "added" (pushed) to the top of the undo_stack. Undoing, removes (pop) the last performed
+action, and redoing re-applies the last undone action from the redo_stack. By using the LIFO principle we ensure that actions are undone or redone in reverse order of how they
+were initially performed, being intiutive for users.
+
+Why is a queue better suited for the help desk?
+
+A queue is the most suitable data structure for a helpdesk since it follows the First-In-First-Out principle. This way we ensure that customers are helped as their requests
+come in, which makes it a fair ticketing system. New users are added to the back of the list (reaer), and the helpdesk helps first users (front), maintaining therefore an strict
+order. 
+
+How do your implementations differ from Python’s built-in lists?
+
+The main and biggest difference in between my lists and Python’s built in is that, Python’s are dynamics arrays. On the other hand, my implementations store data in nodes with value
+and next pointers, making use of linked lists with Node objects. Using top for Stack and front/rear for Queue. Stack’s push and pop, and Queue’s enqueue and dequeue
+due to direct pointer updates. Python lists store elements contiguously, supporting access by index and stack operations (append/pop), but queue operations like pop will shift elements.
+My linked lists use more memory for pointers storage but are able to grow dynamically without the need to resize them. 
